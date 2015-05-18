@@ -1,11 +1,92 @@
-﻿@model mvc_321.ViewModels.course_student
+﻿@*@model mvc_321.ViewModels.course_student*@
 @{
     ViewBag.Title = "Abc";
 }
 
-<h2>Hey this is the abc .cshtml pae under Views/xys folder</h2>
+@*<h2>Hey this is the abc .cshtml pae under Views/xys folder</h2>
 <h2>Course title : @Model.course.CourseName</h2>
 @foreach (var item in Model.students) { 
 <h2> Student Name :@item.FirstName @item.Lastname
-</h2>
+</h2>*@
+<style>
+    #profile {
+        float: left;
+        height: 500px;
+        margin-right: 20px;
+        margin-bottom:20px;
+    }
+
+    #profilediv {
+        font-size: 20px;
+        margin:0 auto;
+        width:800px;
+    }
+
+    #profiletable {
+        float: left;
+    }
+
+        #profiletable th, td {
+            width: 200px;
+        }
+</style>
+<div id="profilediv">
+    <h1>Jack Smith</h1>
+    <img src="http://images.clipartpanda.com/profile-clipart-eTMGgXXTn.png" id="profile">
+    <div>
+        <p><b>Email:</b>Aaaaaaaa@hotmail.com</p>
+        <p><b>Phone Number:</b>0422 222 222</p>
+        <p><b>Age:</b>25</p>
+        <p>
+            <b>Address:</b><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJ5 Johnson Street
+            <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJacksonville, NSW, 2500
+            <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJAustralia
+        </p>
+        <p><b>Gender:</b>Male</p>
+        <p>
+            <b>Type of User:</b>Referee, Administrator
+
+            Time as Referee: 7 years
+        </p>
+
+    </div>
+    <div>
+        <table border="2" id="profiletable">
+            <tr>
+                <th>Qualification name</th>
+                <th>sport</th>
+                <th>Time Achieved</th>
+                <th>Expires</th>
+
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
 }
