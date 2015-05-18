@@ -1,0 +1,11 @@
+﻿@model mvc_321.ViewModels.course_student
+@{
+    ViewBag.Title = "Abc";
+}
+
+<h2>Hey this is the abc .cshtml pae under Views/xys folder</h2>
+<h2>Course title : @Model.course.CourseName</h2>
+@foreach (var item in Model.students) { 
+<h2> Student Name :@item.FirstName @item.Lastname
+</h2>
+}
