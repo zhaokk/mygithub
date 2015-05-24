@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   
     @if (IsSectionDefined("SpecialOther"))
     {
@@ -32,7 +33,8 @@
                     <li>@Html.ActionLink("Home", "abc", "Xyz")</li>
                     <li>@Html.ActionLink("About", "index", "Xyz")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("xyz-abc", "abc", "Xyz")</li>
+                    <li>@Html.ActionLink("xyz-matchlist", "matchlist", "Xyz")</li>
+                    <li>@Html.ActionLink("xyz-matchlist", "userlist", "Xyz")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
