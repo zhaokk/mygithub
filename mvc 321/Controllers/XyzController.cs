@@ -43,5 +43,13 @@ students.Add(john);
         {
             return View();
         }
+        public ActionResult matchlist()
+        {
+            return View();
+        }
+        public ActionResult userlist()
+        {
+            return View();
+        }
 	}
 }

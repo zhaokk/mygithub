@@ -8,9 +8,12 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
-  font-weight: 300; 
+  font-weight: 300;
+  /*edit by connor*/
+  background-image: url(../Content/images/login.jpg);
+  /*edist by connor*/
 
-}
+ }
 body ::-webkit-input-placeholder {
   /* WebKit browsers */
   font-family: 'Source Sans Pro', sans-serif;
@@ -226,3 +229,4 @@ form button:hover {
             transform: translateY(-700px) rotate(600deg);
   }
 }
+
