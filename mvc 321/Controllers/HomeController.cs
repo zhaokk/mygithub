@@ -21,6 +21,10 @@ namespace mvc_321.Controllers
             return "this is the home contoller";
         }
 
+        public ActionResult userlist()
+        {
+            return View();
+        }
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

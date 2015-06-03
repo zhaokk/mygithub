@@ -15,5 +15,10 @@ namespace mvc_321.Controllers
         {
             return View();
         }
+        public ActionResult matchlist()
+        {
+            return View();
+        }
+
 	}
 }

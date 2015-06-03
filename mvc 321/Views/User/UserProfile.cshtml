@@ -4,22 +4,22 @@
 }
 
 @*<h2>Hey this is the abc .cshtml pae under Views/xys folder</h2>
-<h2>Course title : @Model.course.CourseName</h2>
-@foreach (var item in Model.students) { 
-<h2> Student Name :@item.FirstName @item.Lastname
-</h2>*@
+    <h2>Course title : @Model.course.CourseName</h2>
+    @foreach (var item in Model.students) {
+    <h2> Student Name :@item.FirstName @item.Lastname
+    </h2>*@
 <style>
     #profile {
         float: left;
         height: 500px;
         margin-right: 20px;
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
 
     #profilediv {
         font-size: 20px;
-        margin:0 auto;
-        width:800px;
+        margin: 0 auto;
+        width: 800px;
     }
 
     #profiletable {
@@ -32,7 +32,7 @@
 </style>
 <div id="profilediv">
     <div>
-    <h1>Jack Smith  <p style="font-size:50%"><span class="label label-success"><b>User ID:</b></span></p></h1><a href="#" class="btn btn-success" style="margin-left: 61%; margin-top: -11%;">Add new user</a>
+        <h1>Jack Smith  <p style="font-size:50%"><span class="label label-success"><b>User ID:</b></span></p></h1><a href="#" class="btn btn-success" style="margin-left: 61%; margin-top: -11%;">Edit user profile</a>
     </div>
     <img src="http://images.clipartpanda.com/profile-clipart-eTMGgXXTn.png" id="profile">
     <div>
@@ -87,6 +87,6 @@
             </tr>
         </table>
     </div>
-   
+
 </div>
 </div>
