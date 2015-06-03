@@ -101,5 +101,9 @@ namespace mvc_321.Controllers
         {
             return View();
         }
+        public ActionResult userlist(int id = -1)
+        {
+            return View();
+        }
     }
 }
