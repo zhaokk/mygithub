@@ -1,14 +1,13 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "matchlist";
 }
-   
+
 
 <div>
     <br>
     <br>
 </div>
-<div class="btn-group">
+@*<div class="btn-group">
     <div class="btn-group">
         <a href="#" class="btn btn-primary"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Date &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a>
         <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
@@ -24,11 +23,13 @@
         <a href="#" class="btn btn-primary"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Age &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a>
         <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><div class="input-group">
-    <label class="input-group-addon">Weight: </label>
-    <input type="text" class="form-control" id="appendedInput">
-    <span class="input-group-btn btn-group">
-</div></li>
+            <li>
+                <div class="input-group">
+                    <label class="input-group-addon">Weight: </label>
+                    <input type="text" class="form-control" id="appendedInput">
+                    <span class="input-group-btn btn-group">
+                </div>
+            </li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
@@ -71,81 +72,88 @@
         </ul>
 
     </div>
-</div>
-@*<ul class="nav nav-tabs">
-    <li class="active"><a href="#home" data-toggle="tab" aria-expanded="false">&nbsp;&nbsp;Age&nbsp;&nbsp;</a></li>
-    <li class=""><a href="#profile" data-toggle="tab" aria-expanded="true">location</a></li>
-    <li class=""><a href="#profile1" data-toggle="tab" aria-expanded="true">Rating</a></li>
-    <li class=""><a href="#profile2" data-toggle="tab" aria-expanded="true">Team</a></li>
-
-    <li class=""><a href="#profile3" data-toggle="tab" aria-expanded="true">&nbsp;Date&nbsp;</a></li>
-    <li class="disabled"><a>Disabled</a></li>
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-            Dropdown <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-            <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
-            <li class="divider"></li>
-            <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
-        </ul>
-    </li>
-</ul>*@
-@*<div id="myTabContent" class="tab-content">
-    <div class="tab-pane fade" id="home">
-        <div class="input-group">
-            <label class="input-group-addon">From: </label>
-            <input type="text" class="form-control" id="appendedInput" size="10">
-            <label class="input-group-addon">To: </label>
-            <input type="text" class="form-control" id="appendedInput">
-                        
-        </div>
-
-    </div>
-    <div class="tab-pane fade" id="profile">
-        <div class="input-group">
-            <label class="input-group-addon">From: </label>
-            <input type="text" class="form-control" id="appendedInput" size="10">
-            <label class="input-group-addon">To: </label>
-            <input type="text" class="form-control" id="appendedInput">
-
-        </div>
-
-    </div>
-    <div class="tab-pane fade" id="profile1">
-        <div class="input-group">
-            <label class="input-group-addon">From: </label>
-            <input type="text" class="form-control" id="appendedInput" size="10">
-            <label class="input-group-addon">To: </label>
-            <input type="text" class="form-control" id="appendedInput">
-
-        </div>
-
-    </div><div class="tab-pane fade" id="profile2">
-    <div class="input-group">
-        <label class="input-group-addon">From: </label>
-        <input type="text" class="form-control" id="appendedInput" size="10">
-        <label class="input-group-addon">To: </label>
-        <input type="text" class="form-control" id="appendedInput">
-     
-    </div>
-
-</div>
-    <div class="tab-pane fade" id="profile3">
-        <div class="input-group">
-            <label class="input-group-addon">From: </label>
-            <input type="text" class="form-control" id="appendedInput" size="10">
-            <label class="input-group-addon">To: </label>
-            <input type="text" class="form-control" id="appendedInput">
-
-        </div>
-
-    </div>
 </div>*@
-<a href="#" class="btn btn-success" style="margin-left:41%;">Add new user</a>
-    <div class="jumbotron" style=" overflow: scroll; height:500px">
+@*<ul class="nav nav-tabs">
+        <li class="active"><a href="#home" data-toggle="tab" aria-expanded="false">&nbsp;&nbsp;Age&nbsp;&nbsp;</a></li>
+        <li class=""><a href="#profile" data-toggle="tab" aria-expanded="true">location</a></li>
+        <li class=""><a href="#profile1" data-toggle="tab" aria-expanded="true">Rating</a></li>
+        <li class=""><a href="#profile2" data-toggle="tab" aria-expanded="true">Team</a></li>
 
-        
+        <li class=""><a href="#profile3" data-toggle="tab" aria-expanded="true">&nbsp;Date&nbsp;</a></li>
+        <li class="disabled"><a>Disabled</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+            </ul>
+        </li>
+    </ul>*@
+@*<div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade" id="home">
+            <div class="input-group">
+                <label class="input-group-addon">From: </label>
+                <input type="text" class="form-control" id="appendedInput" size="10">
+                <label class="input-group-addon">To: </label>
+                <input type="text" class="form-control" id="appendedInput">
+
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="profile">
+            <div class="input-group">
+                <label class="input-group-addon">From: </label>
+                <input type="text" class="form-control" id="appendedInput" size="10">
+                <label class="input-group-addon">To: </label>
+                <input type="text" class="form-control" id="appendedInput">
+
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="profile1">
+            <div class="input-group">
+                <label class="input-group-addon">From: </label>
+                <input type="text" class="form-control" id="appendedInput" size="10">
+                <label class="input-group-addon">To: </label>
+                <input type="text" class="form-control" id="appendedInput">
+
+            </div>
+
+        </div><div class="tab-pane fade" id="profile2">
+        <div class="input-group">
+            <label class="input-group-addon">From: </label>
+            <input type="text" class="form-control" id="appendedInput" size="10">
+            <label class="input-group-addon">To: </label>
+            <input type="text" class="form-control" id="appendedInput">
+
+        </div>
+
+    </div>
+        <div class="tab-pane fade" id="profile3">
+            <div class="input-group">
+                <label class="input-group-addon">From: </label>
+                <input type="text" class="form-control" id="appendedInput" size="10">
+                <label class="input-group-addon">To: </label>
+                <input type="text" class="form-control" id="appendedInput">
+
+            </div>
+
+        </div>
+    </div>*@
+<div>
+    <div style="width:40%;float:left">
+        <h1>Match list</h1>
+    </div>
+    <div style="width:40%;float:right;margin-top:20px;">
+        <a href="#" class="btn btn-success" style="margin-left: 34%; float: right;">Add New Match</a>
+    </div>
+</div>
+<div class="jumbotron" style=" overflow: scroll; height:500px;width:inherit">
+
+
     <table class="table table-striped table-hover ">
         <thead>
             <tr>
@@ -161,71 +169,95 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
+                <td>04-06-2015</td>
+                <td>wollongong division</td>
+                <td>badass</td>
+                <td>super badass</td>
+                <td>9:00-11:00</td>
+                <td>Wollongong</td>
             </tr>
             <tr>
                 <td>2</td>
+                <td>wollongong division</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
             </tr>
-            <tr class="info">
+            <tr >
                 <td>3</td>
+                <td>badass</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
+
             </tr>
-            <tr class="success">
+            <tr >
                 <td>4</td>
+                <td>super badass</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
+             
             </tr>
-            <tr class="danger">
+            <tr >
                 <td>5</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
             </tr>
-            <tr class="warning">
+            <tr >
                 <td>6</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
+      
             </tr>
-            <tr class="active">
+            <tr >
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
             </tr>
-            <tr class="active">
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+
             </tr>
-            <tr class="active">
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
-            <tr class="active">
-                <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            <tr class="active">
-                <td>7</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            </tr>
+
+
+
+   
+        
         </tbody>
     </table>
 </div>
-   
+

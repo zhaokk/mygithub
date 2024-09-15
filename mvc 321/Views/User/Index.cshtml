@@ -1,13 +1,14 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "userlist";
 }
 
 <div>
     <br>
     <br>
-    </div>
-<div class="btn-group">
+</div>
+
+
+@*<div class="btn-group">
 
 
     <div class="btn-group">
@@ -84,24 +85,36 @@
 
     </div>
 
-   
-    
-</div>
 
-<a href="#" class="btn btn-success" style="margin-left:34%;">Add new user</a>
-<div class="jumbotron" style=" overflow: scroll; height:500px">
+
+</div>*@
+
+@*<a href="#" class="btn btn-success" style="margin-left:34%;">Add new user</a>*@
+<div style="width: inherit; margin-bottom: 20px;">
+    <h1>Jack Smith</h1>
+    <span class="label label-success"><b>User ID:</b></span>
+
+ 
+
+    <a href='@Url.Action("timetable", "User")' class="btn btn-success" style="float:right; margin-top: -3%;">My time table</a>
+</div>
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Notification <span class="badge">1</span></a></li>
+
+</ul>
+<div class="jumbotron" style=" width:inherit;  height:170px">
 
 
     <table class="table table-striped table-hover ">
         <thead>
             <tr>
-                <th>#</th>
-                <th>Name&nbsp;&nbsp;</th>
-                <th>Email&nbsp;</th>
-                <th>Phone Number</th>
-                <th>Is Referee</th>
-                <th>Is Admin</th>
-              
+                
+                <th>ID#&nbsp;&nbsp;</th>
+                <th>Date&nbsp;</th>
+                <th>Division</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
@@ -111,8 +124,38 @@
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
-                <td>Column content</td>
+                <td>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary btn-xs">Accept</a>
+                    <a href="#" class="btn btn-danger btn-xs">Deny</a>
+
+</div></td>
+                
             </tr>
+            
+        </tbody>
+    </table>
+</div>
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Upcoming Match<span class="badge">12</span></a></li>
+</ul>
+<div class="jumbotron" style=" overflow: scroll;width:inherit;  height:500px">
+
+
+    <table class="table table-striped table-hover ">
+        <thead>
+            <tr>
+
+                <th>ID#&nbsp;&nbsp;</th>
+                <th>Date&nbsp;</th>
+                <th>Division</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
             <tr>
                 <td>2</td>
                 <td>Column content</td>
@@ -120,80 +163,89 @@
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="info">
+            <tr>
                 <td>3</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="success">
+            <tr>
                 <td>4</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="danger">
+            <tr>
                 <td>5</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="warning">
+            <tr>
                 <td>6</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="active">
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="active">
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
+
             </tr>
-            <tr class="active">
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
-            <tr class="active">
+
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
-                <td>Column content</td>
+
             </tr>
-            <tr class="active">
+            <tr>
                 <td>7</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
                 <td>Column content</td>
-                <td>Column content</td>
+
             </tr>
             </tr>
         </tbody>
     </table>
 </div>
+
 

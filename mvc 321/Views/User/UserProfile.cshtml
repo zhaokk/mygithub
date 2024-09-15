@@ -1,0 +1,181 @@
+﻿@*@model mvc_321.ViewModels.course_student*@
+@{
+    ViewBag.Title = "Abc";
+}
+
+@*<h2>Hey this is the abc .cshtml pae under Views/xys folder</h2>
+    <h2>Course title : @Model.course.CourseName</h2>
+    @foreach (var item in Model.students) {
+    <h2> Student Name :@item.FirstName @item.Lastname
+    </h2>*@
+<style>
+    #profile {
+        float: left;
+        height: 500px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #profilediv {
+        font-size: 20px;
+        margin: 0 auto;
+        width:inherit;
+    }
+
+    #profiletable {
+        float: left;
+    }
+
+        #profiletable th, td {
+            width: 200px;
+        }
+</style>
+<div id="profilediv">
+    <div>
+        <h1>Jack Smith  <p style="font-size:50%"><span class="label label-success"><b>User ID:</b></span></p></h1>
+        <div>
+            <a href="#" class="btn btn-success" style="float: right; margin-top: -5%; margin-right: 15%;">Edit user profile</a>
+            <a href='@Url.Action("timetable", "User")' class="btn btn-success" style="float:right; margin-top: -5%;">My time table</a>
+        </div>
+    </div>
+    <div class="row" style="width: inherit; height: 520px; ">
+        <div class="col-md-6">
+            <img src="http://images.clipartpanda.com/profile-clipart-eTMGgXXTn.png" id="profile">
+        </div>
+        <div class="col-md-6">
+            <p><span class="label label-info">Email:</span>Aaaaaaaa@hotmail.com</p>
+            <p><span class="label label-info">Phone Number:</span>0422 222 222</p>
+            <p><span class="label label-info">Age:</span>25</p>
+            <p>
+                <span class="label label-info">
+                    Address:
+                </span>
+            <p>J5 Johnson Street</p>
+            <p>
+                Jacksonville, NSW, 2500
+            </p>
+            <p>
+                JAustralia
+            </p>
+            <p><span class="label label-info">Gender:</span>Male</p>
+            <p>
+                <span class="label label-info">
+                    Type of User:
+                </span>Referee, Administrator
+
+                Time as Referee: 7 years
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        
+        <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#">Matches <span class="badge">4</span></a></li>
+    
+        </ul>
+        <div class="jumbotron" style=" width:inherit">
+
+            
+            <table class="table table-striped table-hover ">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Date&nbsp;&nbsp;</th>
+                        <th>Division&nbsp;</th>
+                        <th>Home Team</th>
+                        <th>Away team</th>
+                        <th>Time&nbsp;&nbsp;</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>04-06-2015</td>
+                        <td>wollongong division</td>
+                        <td>badass</td>
+                        <td>super badass</td>
+                        <td>9:00-11:00</td>
+                        <td>Wollongong</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>wollongong division</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>badass</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>super badass</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Qualification  <span class="badge">4</span></a></li>
+
+    </ul>
+    <div class="jumbotron" style=" width:inherit">
+
+
+        <table class="table table-striped table-hover ">
+            <tr>
+                <th>Qualification name</th>
+                <th>sport</th>
+                <th>Time Achieved</th>
+                <th>Expires</th>
+
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+            <tr>
+                <td>Qualification 1</td>
+                <td>Soccer</td>
+                <td>02 Aug 15</td>
+                <td>02 Aug 19</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+

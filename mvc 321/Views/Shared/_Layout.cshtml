@@ -25,16 +25,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                @*@Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @*fgdsfsadf*@
-                    <li>@Html.ActionLink("Home", "abc", "Xyz")</li>
-                    <li>@Html.ActionLink("About", "index", "Xyz")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("xyz-matchlist", "matchlist", "Xyz")</li>
-                    <li>@Html.ActionLink("xyz-matchlist", "userlist", "Xyz")</li>
+                    <li>@Html.ActionLink("Home", "index", "User")</li>
+                    <li>@Html.ActionLink("MyProfile", "userprofile", "User")</li>
+                    @*<li>@Html.ActionLink("Match page", "match_page", "Match_page")</li>*@
+                    <li>@Html.ActionLink("Matchlist", "matchlist", "Match_page")</li>
+                    <li>@Html.ActionLink("Userlist", "userlist", "User")</li>
+
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -44,7 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - My RAO</p>
         </footer>
     </div>
 

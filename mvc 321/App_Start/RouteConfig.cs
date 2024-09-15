@@ -16,8 +16,23 @@ namespace mvc_321
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new
+                {
+                    controller = "Home",
+                    action = "Index",
+                    id = UrlParameter.Optional }
             );
+             
+          //  routes.MapRoute(
+          //    name: "login",
+          //    url: "login/{action}/{id}",
+          //    defaults: new
+          //    {
+          //        controller = "Home",
+          //        action = "Index",
+          //        id = UrlParameter.Optional
+          //    }
+          //);
         }
     }
 }
